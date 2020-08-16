@@ -88,7 +88,7 @@ database.ref('/').update({
 )
 }
 function feedDog(){
-
+dog.addImage=loadImage(happyDogImg)
 foodobject.updateFoodStock(foodobject.getFoodStock()-1)
  database.ref('/').update({
    Food:foodobject.getFoodStock(),
